@@ -30,6 +30,18 @@ variable "desired_task_count" {
   default     = 1
 }
 
+variable "subnet_id_1" {
+  description = "subnet id 1"
+}
+
+variable "subnet_id_2" {
+  description = "subnet id 2"
+}
+
+variable "security_groups_id" {
+  description = "security groups id"
+}
+
 variable "container_port" {
   description = "Porta do contêiner"
   default     = 8080
