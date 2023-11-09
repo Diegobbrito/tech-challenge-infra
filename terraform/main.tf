@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_ecs_cluster" "lanchonete" {
-  name = "lanchonete-cluester"
+  name = "lanchonete-cluster"
 }
 
 resource "aws_ecs_service" "lanchonete_service" {
@@ -13,7 +13,7 @@ resource "aws_ecs_service" "lanchonete_service" {
   desired_count   = 1
 
   network_configuration {
-    subnets =["172.30.0.0/24", "172.30.1.0/24"]
-    security_groups = ["sg-0285e7f7bbd8335e1"]
+    subnets =[var.subnet_id_1, var.subnet_id_2]
+    security_groups = [var.security_groups_id]
   }
 }
