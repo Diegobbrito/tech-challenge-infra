@@ -16,11 +16,12 @@ Este repositório contém código e configurações para criar uma infraestrutur
 
 ## Configuração e Implantação
 
- **Infraestrutura AWS RDS**:
+ **Infraestrutura AWS ECS**:
    - Crie uma nova branch
    - Navegue até o diretório `/terraform`.
    - Atualize os arquivos .tf com o que for necessário
    - Faça o pull request para a main
+   - Após aceito o pr a configuração será realizada na AWS
 
 ## Stack utilizada
 **Cloud Provider:** AWS
