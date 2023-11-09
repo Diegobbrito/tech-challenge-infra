@@ -29,3 +29,6 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           TF_VAR_ecr_repository_url: ${{ secrets.ECR_REPOSITORY }}
           TF_VAR_task_definition_arn: ${{ secrets.TASK_DEFINITION }}
+          TF_VAR_subnet_id_1: ${{ secrets.SUBNET_1 }}
+          TF_VAR_subnet_id_2: ${{ secrets.SUBNET_2 }}
+          TF_VAR_security_groups_id: ${{ secrets.SG_ID }}
